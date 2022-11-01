@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PlayerMovment : MonoBehaviour
 {
-    //Player Movement Speed and Rigidbody
-	    public float speed = 10;
+    //Player Movement Speed, Rigidbody and spriteRend
+	    public float speed = 2;
 	    Rigidbody2D rb2d;
+        SpriteRenderer spriteRend;
   
     //Current movement
 	Vector2 movement = new Vector2();
@@ -15,12 +16,21 @@ public class PlayerMovment : MonoBehaviour
 	{
         //Find our Rigidbody2D
 	    rb2d = GetComponent<Rigidbody2D>();
+        spriteRend = GetComponent<SpriteRenderer>();
 	}
 	void Update()
 	{
         //get input from player
-		float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
+        float x = Input.GetAxis("Horizontal");
+		if (x < 0)
+		{
+			spriteRend.flipX = true;
+		}
+		else if (x>0)
+		{
+			spriteRend.flipX = false;
+		}
 
         //update direction
 		movement.x = x * speed;
