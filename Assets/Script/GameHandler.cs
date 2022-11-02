@@ -14,4 +14,9 @@ public class GameHandler : MonoBehaviour
     {
         SceneManager.LoadScene("GameOver");
     }
+
+    public void ChangetoCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
 }
