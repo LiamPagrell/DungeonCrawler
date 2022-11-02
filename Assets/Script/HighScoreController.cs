@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HighScoreController : MonoBehaviour
 {
-   //public text scoreText;
+   public Text scoreText;
     int score;
-
 
     void Start()
     {
@@ -18,7 +18,7 @@ public class HighScoreController : MonoBehaviour
         score += points;
 
 
-        //scoreText.text = string.Format("SCORE: {0:0000000000}", score);
+        scoreText.text = string.Format("Score:", score);
 
     }
 

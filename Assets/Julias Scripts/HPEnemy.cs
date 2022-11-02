@@ -7,6 +7,7 @@ public class HPEnemy : MonoBehaviour
     public float PlayerMaxhealth  = 5f;
     public GameObject Enemy;
     float timer;
+    int points = 0;
     void Update()
     {
        timer += Time.deltaTime; 
@@ -48,6 +49,8 @@ public class HPEnemy : MonoBehaviour
                     timer = 0;
                     Debug.Log(PlayerMaxhealth);
                     Destroy(Enemy);
+                    points += 1;
+                    Debug.Log(points+100);
                 }
             }
         }

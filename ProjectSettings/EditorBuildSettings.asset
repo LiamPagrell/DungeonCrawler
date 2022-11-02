@@ -4,5 +4,29 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 6c99bf506f6c9f840b91fd33bb7a744c
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 16c1d46e58c8e234680bbbe01d42a9f6
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 16c432e133e1716449d125e94b9a7c35
+  - enabled: 1
+    path: Assets/Scenes/Felicia.unity
+    guid: cd0259689df8a1840863329497ea99f1
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 2fa4981a5109cc9489565b3284441bfb
+  - enabled: 1
+    path: Assets/Scenes/Julia.unity
+    guid: eb9d439cf2020394791a32d5ccd02444
+  - enabled: 1
+    path: Assets/Scenes/Liam.unity
+    guid: d5fede19661f0934a9cdc58f502eb7d7
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
