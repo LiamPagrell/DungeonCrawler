@@ -7,6 +7,11 @@ public class GameHandler : MonoBehaviour
 {
     public void ChangetoGameScreen()
     {
-        SceneManager.LoadScene("game");
+        SceneManager.LoadScene("Game");
+    }
+
+    public void ChangetoGameOver()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 }
