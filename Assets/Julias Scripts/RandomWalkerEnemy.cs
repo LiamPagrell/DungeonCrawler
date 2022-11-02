@@ -75,7 +75,7 @@ public class RandomWalkerEnemy : MonoBehaviour
 
         //Start moving in the new direction
         rb2d.velocity = dir * speed;
-        transform.up = dir;
+        //transform.up = dir;  lägg till den här till spöket istället
 
         //Time until new direction change.
         timer = Random.Range(0.5f, 2);
