@@ -899,6 +899,7 @@ GameObject:
   - component: {fileID: 1675689606}
   - component: {fileID: 1675689605}
   - component: {fileID: 1675689604}
+  - component: {fileID: 1675689608}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -991,6 +992,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1675689608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675689603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf3b756cb5ce7748be95a65076a170d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1761737813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,7 +1087,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1761737816}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1675689608}
+        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
+        m_MethodName: ChangetoCredits
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1761737816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1196,7 +1221,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1790879045}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1675689608}
+        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
+        m_MethodName: ChangetoGameScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1790879045
 MonoBehaviour:
   m_ObjectHideFlags: 0
