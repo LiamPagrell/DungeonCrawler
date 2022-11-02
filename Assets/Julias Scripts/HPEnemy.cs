@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HP : MonoBehaviour
+public class HPEnemy : MonoBehaviour
 {
     public float PlayerMaxhealth  = 5f;
-    public GameObject Player;
-    Animator anim;
+    public GameObject Enemy;
     float timer;
-
-    void Start()
-    {
-        anim = GetComponent<Animator>();
-    }
     void Update()
     {
        timer += Time.deltaTime; 
@@ -20,44 +14,42 @@ public class HP : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
 	{
 
-    if (other.gameObject.CompareTag("Enemy"))
+    if (other.gameObject.CompareTag("Weapon"))
         {
-        if (Player.tag == "Player" )
+        if (Enemy.tag == "Enemy" )
             {
             if (PlayerMaxhealth == 5)
                 {
                     PlayerMaxhealth -=1;
-                    Debug.Log(PlayerMaxhealth+10);
+                    Debug.Log(PlayerMaxhealth);
                 }
                 
             else if (PlayerMaxhealth == 4)
                 {
                     PlayerMaxhealth -=1;
-                    Debug.Log(PlayerMaxhealth+10);
+                    Debug.Log(PlayerMaxhealth);
                 }
 
             else if (PlayerMaxhealth == 3)
                 {
                     PlayerMaxhealth -=1;
-                    Debug.Log(PlayerMaxhealth+10);
+                    Debug.Log(PlayerMaxhealth);
                 }
 
             else if (PlayerMaxhealth == 2)
                 {
                     PlayerMaxhealth -=1;
-                    Debug.Log(PlayerMaxhealth+10);
+                    Debug.Log(PlayerMaxhealth);
                 }
 
             else if (PlayerMaxhealth == 1)
                 {
                     PlayerMaxhealth -=1;
                     timer = 0;
-                    Debug.Log(PlayerMaxhealth+10);
-                    anim.SetTrigger("Death");
+                    Debug.Log(PlayerMaxhealth);
                 }
             }
         }
     }
 			
 }
-                    
