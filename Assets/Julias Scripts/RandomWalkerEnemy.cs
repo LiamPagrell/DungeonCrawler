@@ -8,12 +8,14 @@ public class RandomWalkerEnemy : MonoBehaviour
     Vector2[] dirs = { Vector2.up, Vector2.down, Vector2.right, Vector2.left };
     Vector2 dir;
     Rigidbody2D rb2d;
+    Transform target;
 
     float timer;
 
     // Start is called before the first frame update
     void Start()
     {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
         rb2d = GetComponent<Rigidbody2D>();
 
         MoveNewDirection();
@@ -39,11 +41,37 @@ public class RandomWalkerEnemy : MonoBehaviour
 		var oldDir = dir;
 
         //Get a new random direction
-        do
+        if(Random.value > 0.5f)
         {
-            dir = dirs[Random.Range(0, dirs.Length)];
+            do
+            {
+                dir = dirs[Random.Range(0, dirs.Length)];
+            }
+            while (dir == oldDir);
         }
-        while (dir == oldDir);
+        else
+        {
+            float distX = transform.position.x - target.position.x;
+            float distY = transform.position.y - target.position.y;
+
+            if(Mathf.Abs(distX) > Mathf.Abs(distY))
+            {
+                if(transform.position.x > target.position.x)
+                    dir = Vector2.left;
+                
+                if(transform.position.x < target.position.x)
+                    dir = Vector2.right;
+            }
+            else
+            {
+                if(transform.position.y > target.position.y)
+                    dir = Vector2.up;
+                
+                if(transform.position.y < target.position.y)
+                    dir = Vector2.down;
+            }
+
+        }
 
         //Start moving in the new direction
         rb2d.velocity = dir * speed;
