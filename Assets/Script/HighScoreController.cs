@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HighScoreController : MonoBehaviour
 {
-   public text scoreText;
+   //public text scoreText;
     int score;
 
 
@@ -18,7 +18,7 @@ public class HighScoreController : MonoBehaviour
         score += points;
 
 
-        scoreText.text = string.Format("SCORE: {0:0000000000}", score);
+        //scoreText.text = string.Format("SCORE: {0:0000000000}", score);
 
     }
 
