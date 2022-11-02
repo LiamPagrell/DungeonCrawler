@@ -6,6 +6,7 @@ public class HP : MonoBehaviour
 {
     public float PlayerMaxhealth  = 5f;
     public GameObject Player;
+    public GameObject Weapon;
     Animator anim;
     float timer;
 
@@ -53,7 +54,11 @@ public class HP : MonoBehaviour
                     PlayerMaxhealth -=1;
                     timer = 0;
                     Debug.Log(PlayerMaxhealth+10);
+                    Destroy(Weapon);
                     anim.SetTrigger("Death");
+                    
+
+                    
                 }
             }
         }
