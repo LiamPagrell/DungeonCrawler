@@ -439,8 +439,8 @@ GameObject:
   - component: {fileID: 337689522}
   - component: {fileID: 337689521}
   - component: {fileID: 337689520}
-  - component: {fileID: 337689519}
   - component: {fileID: 337689518}
+  - component: {fileID: 337689525}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -463,19 +463,6 @@ MonoBehaviour:
   PlayerMaxhealth: 5
   Player: {fileID: 337689517}
   Weapon: {fileID: 190800722}
---- !u!114 &337689519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337689517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ae07c737bd28e24886049ad088e2b09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!50 &337689520
 Rigidbody2D:
   serializedVersion: 4
@@ -510,7 +497,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00000023841858, y: -0.056120723}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -521,7 +508,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.8596978, y: 0.88775855}
   m_EdgeRadius: 0
 --- !u!95 &337689522
 Animator:
@@ -611,6 +598,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &337689525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337689517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ae07c737bd28e24886049ad088e2b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &802584509
 GameObject:
   m_ObjectHideFlags: 0

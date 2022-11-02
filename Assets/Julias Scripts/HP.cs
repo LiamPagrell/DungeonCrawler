@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HP : MonoBehaviour
 {
@@ -9,9 +10,13 @@ public class HP : MonoBehaviour
     public GameObject Weapon;
     Animator anim;
     float timer;
+    int EnemieMaxhealth = 3;
+    int Playercurrenthealth;
+    int Enemiecurrenthealth;
 
     void Start()
     {
+        float Playercurrenthealth = PlayerMaxhealth;
         anim = GetComponent<Animator>();
     }
     void Update()
@@ -56,9 +61,9 @@ public class HP : MonoBehaviour
                     Debug.Log(PlayerMaxhealth+10);
                     Destroy(Weapon);
                     anim.SetTrigger("Death");
-                    
 
-                    
+                    SceneManager.LoadScene("GameOver");
+
                 }
             }
         }
