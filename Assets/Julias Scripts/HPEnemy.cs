@@ -47,6 +47,7 @@ public class HPEnemy : MonoBehaviour
                     PlayerMaxhealth -=1;
                     timer = 0;
                     Debug.Log(PlayerMaxhealth);
+                    Destroy(Enemy);
                 }
             }
         }
