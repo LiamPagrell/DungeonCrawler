@@ -6,20 +6,11 @@ using UnityEngine.UI;
 public class HighScoreController : MonoBehaviour
 {
    public Text scoreText;
-    int score;
+    public int score = 0;
 
-    void Start()
+   void Update()
     {
-        score = 0;
-    }
-
-    public void AddScore(int points)
-    {
-        score += points;
-
-
-        scoreText.text = string.Format("Score:", score);
-
+       scoreText.text = "Score : " + score;
     }
 
 }

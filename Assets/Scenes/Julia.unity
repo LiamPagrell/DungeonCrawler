@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 190800724}
   - component: {fileID: 190800725}
   - component: {fileID: 190800726}
-  - component: {fileID: 190800727}
   - component: {fileID: 190800728}
   m_Layer: 0
   m_Name: weapon
@@ -257,19 +256,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &190800727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 190800722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ae07c737bd28e24886049ad088e2b09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
 --- !u!50 &190800728
 Rigidbody2D:
   serializedVersion: 4
@@ -588,11 +574,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 802584509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: ff4f58b71d1621e4ab366b7e138220f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1050953354}
-  score: 0
+  score: 442
 --- !u!1 &1050953353
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,6 +898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerMaxhealth: 5
   Enemy: {fileID: 1214246316}
+  HC: {fileID: 802584514}
 --- !u!58 &1214246322
 CircleCollider2D:
   m_ObjectHideFlags: 0
