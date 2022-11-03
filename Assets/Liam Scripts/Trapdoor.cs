@@ -17,6 +17,7 @@ public class Trapdoor : MonoBehaviour
         {
             LvlMangr = GameObject.FindObjectOfType<LevelManager>(); //Call on LevelManager and make it a variable for easier use
             LvlMangr.LoadNewLevel(); //Call on the Function LoadNewLevel in LevelManager Trough the class
+            LvlMangr.DestroyAllEnemies();
         }
     }
 

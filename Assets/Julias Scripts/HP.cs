@@ -16,6 +16,7 @@ public class HP : MonoBehaviour
     Animator anim;
 
     [SerializeField] AudioSource Deathsound;
+    [SerializeField] AudioSource Hurtsound;
     float timer;
     bool Death= false;
     int EnemieMaxhealth = 3;
@@ -46,28 +47,28 @@ public class HP : MonoBehaviour
                 {
                     PlayerMaxhealth -=1;
                     Destroy(Heart1);
-                    Debug.Log(PlayerMaxhealth+10);
+                    Hurtsound.Play();
                 }
                 
             else if (PlayerMaxhealth == 4)
                 {
                     PlayerMaxhealth -=1;
                     Destroy(Heart2);
-                    Debug.Log(PlayerMaxhealth+10);
+                    Hurtsound.Play();
                 }
 
             else if (PlayerMaxhealth == 3)
                 {
                     PlayerMaxhealth -=1;
                     Destroy(Heart3);
-                    Debug.Log(PlayerMaxhealth+10);
+                    Hurtsound.Play();
                 }
 
             else if (PlayerMaxhealth == 2)
                 {
                     PlayerMaxhealth -=1;
                     Destroy(Heart4);
-                    Debug.Log(PlayerMaxhealth+10);
+                    Hurtsound.Play();
                 }
 
             else if (PlayerMaxhealth == 1)
