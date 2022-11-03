@@ -15,13 +15,14 @@ public class LevelManager : MonoBehaviour
 
     private GameObject prefab;
     private GameObject currentObject;
-    private GameObject player;
+    private GameObject[] enemies;
+    //private GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
         //player = GameObject.FindGameObjectWithTag("Player");
-        Debug.Log(player);
+        //Debug.Log(player);
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
         prefab = prefabStart;
         currentObject = Instantiate(prefab, transform.position, Quaternion.identity);      
@@ -84,6 +85,16 @@ public class LevelManager : MonoBehaviour
         Destroy(currentObject);
         Destroy(GameObject.FindGameObjectWithTag("Player"));
         currentObject = Instantiate(templates.prefablist[RandomNumber], transform.position, Quaternion.identity);      
+    }
+
+    public void DestroyAllEnemies() //Kill all enemies code for Trapdoor class which destroys all tagged enemies when enetering trapdoor
+    {
+        enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            Destroy(enemies[i]);
+        }
     }
 
 }
