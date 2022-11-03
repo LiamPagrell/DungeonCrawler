@@ -65,12 +65,14 @@ public class HPEnemy : MonoBehaviour
                         Death = true;
                         timer = 0;
                         anim1.SetTrigger("DeathOfSlime");
+                        anim1.SetTrigger("Deathghost");
                     }
                     PlayerMaxhealth -=1;
                     timer = 0;
                     Debug.Log(PlayerMaxhealth);
                     HC.score ++;
                     anim1.SetTrigger("DeathOfSlime");
+                    anim1.SetTrigger("Deathghost");
                     DeathsoundEnemy.Play();
                     Debug.Log(points+100);
                 }
