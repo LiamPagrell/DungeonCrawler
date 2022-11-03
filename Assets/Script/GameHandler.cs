@@ -23,4 +23,9 @@ public class GameHandler : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
     }
+    public void ChangetoQuit()
+    {
+        SceneManager.LoadScene("Quit");
+        Application.Quit();
+    }
 }
