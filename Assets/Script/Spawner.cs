@@ -35,7 +35,7 @@ public class Spawner : MonoBehaviour
         randomPosition.x = Random.Range(-width, width);
         randomPosition.y = Random.Range(-height, height);
 
-        Quaternion randomRotation = Quaternion.Euler(0, 0, Random.Range(0, 360f));
+        Quaternion randomRotation = Quaternion.Euler(0, 0, Random.Range(0, 0f));
 
         Instantiate(enemy, randomPosition, randomRotation, transform);
     }
