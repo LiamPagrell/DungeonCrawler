@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 5679598625444149596}
   m_Layer: 0
   m_Name: BorderRight
-  m_TagString: Untagged
+  m_TagString: Borders
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -941,7 +941,7 @@ GameObject:
   - component: {fileID: 5040247134521865734}
   m_Layer: 0
   m_Name: BorderBot
-  m_TagString: Untagged
+  m_TagString: Borders
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1052,7 +1052,7 @@ GameObject:
   - component: {fileID: 2046543838758671293}
   m_Layer: 0
   m_Name: BorderLeft
-  m_TagString: Untagged
+  m_TagString: Borders
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1563,7 +1563,7 @@ GameObject:
   - component: {fileID: 401848374144129183}
   m_Layer: 0
   m_Name: BorderTop
-  m_TagString: Untagged
+  m_TagString: Borders
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1775,11 +1775,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7392884486622015269, guid: e4f45e208802f2d4fa2cba193d5a3303, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.87
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 7392884486622015269, guid: e4f45e208802f2d4fa2cba193d5a3303, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.05
+      value: 1.02
       objectReference: {fileID: 0}
     - target: {fileID: 7392884486622015269, guid: e4f45e208802f2d4fa2cba193d5a3303, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1963,11 +1963,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6116267
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2539562
+      value: -1.06
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalPosition.z

@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823115458865078300}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.36, y: 0.87, z: -0.87385535}
+  m_LocalPosition: {x: -0.14, y: 0.87, z: -0.87385535}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -137,7 +137,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2212013249465642068}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.41, y: 0.88, z: -0.87385535}
+  m_LocalPosition: {x: -1.2, y: 0.87, z: -0.87385535}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -285,7 +285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2704937068580459632}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4, y: -0.6, z: -0.87385535}
+  m_LocalPosition: {x: -1.21, y: -0.4, z: -0.87385535}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -383,7 +383,7 @@ GameObject:
   - component: {fileID: 9005687664040156177}
   m_Layer: 0
   m_Name: BorderRight
-  m_TagString: Untagged
+  m_TagString: Borders
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -618,7 +618,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4454512781062829338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.87, y: 0.87, z: -0.87385535}
+  m_LocalPosition: {x: -0.67, y: 0.87, z: -0.87385535}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 4015235163049164242}
   m_Layer: 0
   m_Name: BorderTop
-  m_TagString: Untagged
+  m_TagString: Borders
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1061,7 +1061,7 @@ GameObject:
   - component: {fileID: 3336486914275915504}
   m_Layer: 0
   m_Name: BorderLeft
-  m_TagString: Untagged
+  m_TagString: Borders
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1318,7 +1318,7 @@ GameObject:
   - component: {fileID: 8636166841691345739}
   m_Layer: 0
   m_Name: BorderBot
-  m_TagString: Untagged
+  m_TagString: Borders
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1502,11 +1502,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7392884486622015269, guid: e4f45e208802f2d4fa2cba193d5a3303, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.92
+      value: -1.8
       objectReference: {fileID: 0}
     - target: {fileID: 7392884486622015269, guid: e4f45e208802f2d4fa2cba193d5a3303, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.89
+      value: -0.96
       objectReference: {fileID: 0}
     - target: {fileID: 7392884486622015269, guid: e4f45e208802f2d4fa2cba193d5a3303, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1562,11 +1562,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.28909796
+      value: 0.43
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.05
+      value: -1.07
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1626,11 +1626,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.7538992
+      value: -1.12
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.35635182
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalPosition.z
