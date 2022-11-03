@@ -7,9 +7,15 @@ public class HP : MonoBehaviour
 {
     public float PlayerMaxhealth  = 5f;
     public GameObject Player;
+    public GameObject Heart1;
+    public GameObject Heart2;
+    public GameObject Heart3;
+    public GameObject Heart4;
+    public GameObject Heart5;
     public GameObject Weapon;
     Animator anim;
     float timer;
+    bool Death= false;
     int EnemieMaxhealth = 3;
     int Playercurrenthealth;
     int Enemiecurrenthealth;
@@ -22,6 +28,10 @@ public class HP : MonoBehaviour
     void Update()
     {
        timer += Time.deltaTime; 
+       if (timer > 1.9f && Death == true )
+                {
+                SceneManager.LoadScene("GameOver");
+                }
     }
     public void OnTriggerEnter2D(Collider2D other)
 	{
@@ -33,37 +43,44 @@ public class HP : MonoBehaviour
             if (PlayerMaxhealth == 5)
                 {
                     PlayerMaxhealth -=1;
+                    Destroy(Heart1);
                     Debug.Log(PlayerMaxhealth+10);
                 }
                 
             else if (PlayerMaxhealth == 4)
                 {
                     PlayerMaxhealth -=1;
+                    Destroy(Heart2);
                     Debug.Log(PlayerMaxhealth+10);
                 }
 
             else if (PlayerMaxhealth == 3)
                 {
                     PlayerMaxhealth -=1;
+                    Destroy(Heart3);
                     Debug.Log(PlayerMaxhealth+10);
                 }
 
             else if (PlayerMaxhealth == 2)
                 {
                     PlayerMaxhealth -=1;
+                    Destroy(Heart4);
                     Debug.Log(PlayerMaxhealth+10);
                 }
 
             else if (PlayerMaxhealth == 1)
                 {
-                    PlayerMaxhealth -=1;
-                    timer = 0;
+                    if (Death == false)
+                    {
+                        timer = 0;
+                        Death = true;
+                    }
+                    
+                    Destroy(Heart5);
                     Debug.Log(PlayerMaxhealth+10);
                     Destroy(Weapon);
                     anim.SetTrigger("Death");
-
-                    SceneManager.LoadScene("GameOver");
-
+                    Debug.Log(timer);
                 }
             }
         }

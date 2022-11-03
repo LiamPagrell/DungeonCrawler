@@ -1,25 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HighScoreController : MonoBehaviour
 {
-   //public text scoreText;
-    int score;
+   public Text scoreText;
+    public int score = 0;
 
-
-    void Start()
+   void Update()
     {
-        score = 0;
-    }
-
-    public void AddScore(int points)
-    {
-        score += points;
-
-
-        //scoreText.text = string.Format("SCORE: {0:0000000000}", score);
-
+       scoreText.text = "Score : " + score;
     }
 
 }

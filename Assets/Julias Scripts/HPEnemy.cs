@@ -6,10 +6,24 @@ public class HPEnemy : MonoBehaviour
 {
     public float PlayerMaxhealth  = 5f;
     public GameObject Enemy;
+    public HighScoreController HC;
+    Animator anim1;
     float timer;
+    bool Death= false;
+    int points = 0;
+    void Start()
+    {
+        HC = GameObject.Find("Canvas").GetComponent<HighScoreController>();
+        anim1 = GetComponent<Animator>();
+    }
     void Update()
     {
        timer += Time.deltaTime; 
+       if (timer > 0.5f && Death == true )
+                {
+                Debug.Log("Slime Is dead");
+                Destroy(Enemy);
+                }
     }
     public void OnTriggerEnter2D(Collider2D other)
 	{
@@ -44,10 +58,18 @@ public class HPEnemy : MonoBehaviour
 
             else if (PlayerMaxhealth == 1)
                 {
+                    if (Death == false)
+                    {
+                        Death = true;
+                        timer = 0;
+                        anim1.SetTrigger("DeathOfSlime");
+                    }
                     PlayerMaxhealth -=1;
                     timer = 0;
                     Debug.Log(PlayerMaxhealth);
-                    Destroy(Enemy);
+                    HC.score ++;
+                    anim1.SetTrigger("DeathOfSlime");
+                    Debug.Log(points+100);
                 }
             }
         }
