@@ -8,7 +8,6 @@ public class PlayerMovment : MonoBehaviour
 	    public float speed = 2;
 	    Rigidbody2D rb2d;
         SpriteRenderer spriteRend;
-
 		HP player;
   
     //Current movement
