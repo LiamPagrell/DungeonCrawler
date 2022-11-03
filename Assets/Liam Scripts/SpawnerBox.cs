@@ -17,8 +17,7 @@ public class SpawnerBox : MonoBehaviour
         foreach (GameObject SlimeEnemySpawner in spawnersSlime)
         {
             Instantiate(slime, SlimeEnemySpawner.transform.position, Quaternion.identity);
-        }
-        //SpawnWave(amount);
+        }        
     }
 
     //private void SpawnWave(int numberOfEnemies)
