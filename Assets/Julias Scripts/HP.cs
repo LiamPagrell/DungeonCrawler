@@ -14,6 +14,8 @@ public class HP : MonoBehaviour
     public GameObject Heart5;
     public GameObject Weapon;
     Animator anim;
+
+    [SerializeField] AudioSource Deathsound;
     float timer;
     bool Death= false;
     int EnemieMaxhealth = 3;
@@ -80,6 +82,7 @@ public class HP : MonoBehaviour
                     Debug.Log(PlayerMaxhealth+10);
                     Destroy(Weapon);
                     anim.SetTrigger("Death");
+                    Deathsound.Play();
                     Debug.Log(timer);
                 }
             }
