@@ -14,15 +14,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 155994655904965993, guid: 2c61715862658c84ca3f8d66ebb32340, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 155994655904965993, guid: 2c61715862658c84ca3f8d66ebb32340, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 155994655904965993, guid: 2c61715862658c84ca3f8d66ebb32340, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 155994655904965993, guid: 2c61715862658c84ca3f8d66ebb32340, type: 3}
       propertyPath: m_LocalPosition.x
@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 155994655904965994, guid: 2c61715862658c84ca3f8d66ebb32340, type: 3}
       propertyPath: m_Name
-      value: slimeEnemy
+      value: slimeEnemy Variant
       objectReference: {fileID: 0}
     - target: {fileID: 155994655904966002, guid: 2c61715862658c84ca3f8d66ebb32340, type: 3}
       propertyPath: Walksound

@@ -97,6 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ee5d2f76e0235043bdc4c5d794681c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slime: {fileID: 155994655904965994, guid: 2c61715862658c84ca3f8d66ebb32340, type: 3}
+  slime: {fileID: 3784079173480965656, guid: 7a8cac833c4329a45a3c4feb94823ed6, type: 3}
   spawnersSlime:
   - {fileID: 2606373475647014831}
