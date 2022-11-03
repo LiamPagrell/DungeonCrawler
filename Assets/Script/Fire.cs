@@ -10,9 +10,6 @@ public class Fire : MonoBehaviour
     public Transform gunPoint2;
     public float fireRate = 0.5f;
 
-
-
-
     public float ammo;
 
     float timer;
