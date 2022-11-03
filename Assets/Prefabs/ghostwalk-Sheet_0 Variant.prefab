@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3201643521050311565, guid: d48012148d89ab648bb625d4aac0b642, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3201643521050311565, guid: d48012148d89ab648bb625d4aac0b642, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64,13 +64,17 @@ PrefabInstance:
       propertyPath: DeathsoundEnemy
       value: 
       objectReference: {fileID: 1920570211}
+    - target: {fileID: 3201643521050311600, guid: d48012148d89ab648bb625d4aac0b642, type: 3}
+      propertyPath: PlayerMaxhealth
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3201643521050311601, guid: d48012148d89ab648bb625d4aac0b642, type: 3}
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3201643521050311605, guid: d48012148d89ab648bb625d4aac0b642, type: 3}
       propertyPath: m_Name
-      value: ghostwalk-Sheet_0
+      value: ghostwalk-Sheet_0 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

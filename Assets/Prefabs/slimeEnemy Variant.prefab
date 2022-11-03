@@ -84,6 +84,10 @@ PrefabInstance:
       propertyPath: DeathsoundSlime
       value: 
       objectReference: {fileID: 1214246325}
+    - target: {fileID: 155994655904966007, guid: 2c61715862658c84ca3f8d66ebb32340, type: 3}
+      propertyPath: PlayerMaxhealth
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c61715862658c84ca3f8d66ebb32340, type: 3}
