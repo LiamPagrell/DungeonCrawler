@@ -9,6 +9,7 @@ public class RandomWalkerEnemy : MonoBehaviour
     Vector2 dir;
     Rigidbody2D rb2d;
     Transform target;
+    [SerializeField] AudioSource Walksound;
 
     float timer;
 
@@ -54,6 +55,7 @@ public class RandomWalkerEnemy : MonoBehaviour
         {
             float distX = transform.position.x - target.position.x;
             float distY = transform.position.y - target.position.y;
+            Walksound.Play();
 
             if(Mathf.Abs(distX) > Mathf.Abs(distY))
             {

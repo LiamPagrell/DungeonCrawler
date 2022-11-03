@@ -7,6 +7,8 @@ public class HPEnemy : MonoBehaviour
     public float PlayerMaxhealth  = 5f;
     public GameObject Enemy;
     public HighScoreController HC;
+    [SerializeField] AudioSource DeathsoundEnemy;
+    [SerializeField] AudioSource Enemyhurt;
     Animator anim1;
     float timer;
     bool Death= false;
@@ -35,25 +37,25 @@ public class HPEnemy : MonoBehaviour
             if (PlayerMaxhealth == 5)
                 {
                     PlayerMaxhealth -=1;
-                    Debug.Log(PlayerMaxhealth);
+                    Enemyhurt.Play();
                 }
                 
             else if (PlayerMaxhealth == 4)
                 {
                     PlayerMaxhealth -=1;
-                    Debug.Log(PlayerMaxhealth);
+                    Enemyhurt.Play();
                 }
 
             else if (PlayerMaxhealth == 3)
                 {
                     PlayerMaxhealth -=1;
-                    Debug.Log(PlayerMaxhealth);
+                    Enemyhurt.Play();
                 }
 
             else if (PlayerMaxhealth == 2)
                 {
                     PlayerMaxhealth -=1;
-                    Debug.Log(PlayerMaxhealth);
+                    Enemyhurt.Play();
                 }
 
             else if (PlayerMaxhealth == 1)
@@ -63,12 +65,15 @@ public class HPEnemy : MonoBehaviour
                         Death = true;
                         timer = 0;
                         anim1.SetTrigger("DeathOfSlime");
+                        anim1.SetTrigger("Deathghost");
                     }
                     PlayerMaxhealth -=1;
                     timer = 0;
                     Debug.Log(PlayerMaxhealth);
                     HC.score ++;
                     anim1.SetTrigger("DeathOfSlime");
+                    anim1.SetTrigger("Deathghost");
+                    DeathsoundEnemy.Play();
                     Debug.Log(points+100);
                 }
             }
