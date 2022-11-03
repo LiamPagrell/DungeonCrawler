@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnerBox : MonoBehaviour
 {
-    public GameObject slime;
+    public GameObject slime;   
     //public int amount = 1;
     public GameObject[] spawnersSlime;
     // Start is called before the first frame update
@@ -17,7 +17,9 @@ public class SpawnerBox : MonoBehaviour
         foreach (GameObject SlimeEnemySpawner in spawnersSlime)
         {
             Instantiate(slime, SlimeEnemySpawner.transform.position, Quaternion.identity);
-        }        
+        }
+        
+        
     }
 
     //private void SpawnWave(int numberOfEnemies)
