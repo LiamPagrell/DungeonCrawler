@@ -3,7 +3,7 @@ using UnityEngine;
 public class Wizard : MonoBehaviour
 {
     public GameObject projectile;
-    public Transform gunPoint;
+    public Transform trollstav;
     public bool aim = false; //Are we aiming at the player?
     public float aimTimeBeforeFire = 1;
     public GameObject wizard;
@@ -42,7 +42,7 @@ public class Wizard : MonoBehaviour
 
     private void Fire()
     {
-        Instantiate(projectile, gunPoint.position, gunPoint.rotation);
+        Instantiate(projectile, trollstav.position, trollstav.rotation);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
