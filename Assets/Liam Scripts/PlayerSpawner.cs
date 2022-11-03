@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[DefaultExecutionOrder(-1)]
 public class PlayerSpawner : MonoBehaviour
 {
     public GameObject Player;
@@ -10,6 +11,7 @@ public class PlayerSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("PlayerSPawner");
         if (playerSpawner1 == null)
         {
             playerSpawner1 = GameObject.FindGameObjectsWithTag("PlayerSpawner");

@@ -10,7 +10,7 @@ public class RoomTemplates : MonoBehaviour
     //public GameObject[] RoomsWithRightDoors;
     //public GameObject[] FourWayRoom;
     public GameObject[] GridRooms;
-    public GameObject[] prefablist;
+    public GameObject[] prefablist;    
 
     
 
