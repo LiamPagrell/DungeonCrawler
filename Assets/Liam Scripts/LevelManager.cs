@@ -34,6 +34,12 @@ public class LevelManager : MonoBehaviour
             Destroy(currentObject);
             currentObject = Instantiate(templates.prefablist[RandomNumber], transform.position, Quaternion.identity);
         }
+        if (Input.GetKeyDown("r"))
+        {
+            prefab = prefabStart;
+            Destroy(currentObject);
+            currentObject = Instantiate(prefab, transform.position, Quaternion.identity);
+        }
         //if(Input.GetKeyDown("2"))
         //{
         //    prefab = prefabTwo;
