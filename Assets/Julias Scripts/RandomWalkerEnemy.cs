@@ -55,7 +55,7 @@ public class RandomWalkerEnemy : MonoBehaviour
         {
             float distX = transform.position.x - target.position.x;
             float distY = transform.position.y - target.position.y;
-            Walksound.Play();
+            Walksound?.Play();
 
             if(Mathf.Abs(distX) > Mathf.Abs(distY))
             {

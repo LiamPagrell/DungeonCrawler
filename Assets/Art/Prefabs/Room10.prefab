@@ -586,6 +586,7 @@ Transform:
   - {fileID: 6627172646869441140}
   - {fileID: 1450479091501625934}
   - {fileID: 1724070514710448639}
+  - {fileID: 3276284596882345386}
   m_Father: {fileID: 4993466583710230089}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1698,7 +1699,6 @@ Transform:
   - {fileID: 3708877399416722841}
   - {fileID: 2677229235862834696}
   - {fileID: 3574230662878660572}
-  - {fileID: 3276284596882345386}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2131,7 +2131,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 2
-    m_TransformParent: {fileID: 4993466583710230089}
+    m_TransformParent: {fileID: 2677229235862834696}
     m_Modifications:
     - target: {fileID: 1176553959901608605, guid: c3bf4afee88e05547b1be93435a27150, type: 3}
       propertyPath: m_Color.a
@@ -2147,15 +2147,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6370291782119142151, guid: c3bf4afee88e05547b1be93435a27150, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7454298
+      value: 3.3918943
       objectReference: {fileID: 0}
     - target: {fileID: 6370291782119142151, guid: c3bf4afee88e05547b1be93435a27150, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.17540812
+      value: 0.71203876
       objectReference: {fileID: 0}
     - target: {fileID: 6370291782119142151, guid: c3bf4afee88e05547b1be93435a27150, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0007507056
+      value: -0.0028166994
       objectReference: {fileID: 0}
     - target: {fileID: 6370291782119142151, guid: c3bf4afee88e05547b1be93435a27150, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2185,11 +2185,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6973546923619770768, guid: c3bf4afee88e05547b1be93435a27150, type: 3}
+      propertyPath: spawnersGhost.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973546923619770768, guid: c3bf4afee88e05547b1be93435a27150, type: 3}
+      propertyPath: spawnersGhost.Array.data[0]
+      value: 
+      objectReference: {fileID: 6784955522570711918}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: c3bf4afee88e05547b1be93435a27150, type: 3}
 --- !u!4 &3276284596882345386 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6370291782119142151, guid: c3bf4afee88e05547b1be93435a27150, type: 3}
+  m_PrefabInstance: {fileID: 8435349736504737453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6784955522570711918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3114627260857601475, guid: c3bf4afee88e05547b1be93435a27150, type: 3}
   m_PrefabInstance: {fileID: 8435349736504737453}
   m_PrefabAsset: {fileID: 0}

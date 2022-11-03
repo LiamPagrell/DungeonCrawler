@@ -180,6 +180,7 @@ MonoBehaviour:
   Heart5: {fileID: 0}
   Weapon: {fileID: 6269406072737845365}
   Deathsound: {fileID: 0}
+  Hurtsound: {fileID: 0}
 --- !u!114 &6269406072252434578
 MonoBehaviour:
   m_ObjectHideFlags: 0

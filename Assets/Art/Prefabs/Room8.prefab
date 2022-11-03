@@ -735,7 +735,6 @@ Transform:
   - {fileID: 9211411040070052226}
   - {fileID: 5531765598409983618}
   - {fileID: 1316250610263974135}
-  - {fileID: 3677981839568708078}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -933,6 +932,7 @@ Transform:
   - {fileID: 6292628497727482986}
   - {fileID: 2026778459048572279}
   - {fileID: 5809936975594593220}
+  - {fileID: 3677981839568708078}
   m_Father: {fileID: 711936768133110354}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2159,7 +2159,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 2
-    m_TransformParent: {fileID: 711936768133110354}
+    m_TransformParent: {fileID: 5531765598409983618}
     m_Modifications:
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_RootOrder
@@ -2167,15 +2167,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: -2.2367713
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.97
+      value: 1.2716546
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0007507056
+      value: -0.024365298
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2207,7 +2207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2606373475647014831, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_Name
-      value: SlimeEnemySpawner
+      value: SlimeEnemySpawner (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

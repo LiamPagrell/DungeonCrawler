@@ -11,7 +11,6 @@ public class PlayerSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("PlayerSPawner");
         if (playerSpawner1 == null)
         {
             playerSpawner1 = GameObject.FindGameObjectsWithTag("PlayerSpawner");

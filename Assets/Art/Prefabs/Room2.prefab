@@ -962,7 +962,6 @@ Transform:
   - {fileID: 1393971303336871429}
   - {fileID: 6834375493429976358}
   - {fileID: 5623403154403134304}
-  - {fileID: 3716369022675639777}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1160,6 +1159,7 @@ Transform:
   - {fileID: 8525725491406644470}
   - {fileID: 7754122831956239070}
   - {fileID: 713853972773935810}
+  - {fileID: 3716369022675639777}
   m_Father: {fileID: 7308408423532082645}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1891,7 +1891,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 2
-    m_TransformParent: {fileID: 7308408423532082645}
+    m_TransformParent: {fileID: 6834375493429976358}
     m_Modifications:
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_RootOrder
@@ -1899,7 +1899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.11
+      value: 0.111726746
       objectReference: {fileID: 0}
     - target: {fileID: 1624776570273348558, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1939,7 +1939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2606373475647014831, guid: 985375b27efded148b73afe1fde7813d, type: 3}
       propertyPath: m_Name
-      value: SlimeEnemySpawner
+      value: SlimeEnemySpawner (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
